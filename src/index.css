@@ -1,0 +1,512 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-degular: 'Degular', sans-serif;
+  --font-degular-display: 'Degular Display', sans-serif;
+  --font-degular-text: 'Degular Text', sans-serif;
+  --font-degular-mono: 'Degular Mono', monospace;
+}
+
+/* Degular Font Family - Regular */
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-ThinItalic.otf')
+    format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-LightItalic.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-MediumItalic.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-SemiboldItalic.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-BoldItalic.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-Black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular';
+  src: url('./assets/fonts/degular/DegularDemo-BlackItalic.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Degular Display Font Family */
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Thin.otf')
+    format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-ThinItalic.otf')
+    format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Light.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-LightItalic.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Italic.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-MediumItalic.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Semibold.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-SemiboldItalic.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Bold.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-BoldItalic.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-Black.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Display';
+  src: url('./assets/fonts/degular/DegularDisplayDemo-BlackItalic.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Degular Text Font Family */
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-ThinItalic.otf')
+    format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Light.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-LightItalic.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Italic.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-MediumItalic.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Semibold.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-SemiboldItalic.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-BoldItalic.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-Black.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Text';
+  src: url('./assets/fonts/degular/DegularTextDemo-BlackItalic.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Degular Mono Font Family */
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-ThinItalic.otf')
+    format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Light.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-LightItalic.otf')
+    format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Regular.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Italic.otf')
+    format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Medium.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-MediumItalic.otf')
+    format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Semibold.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-SemiboldItalic.otf')
+    format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-BoldItalic.otf')
+    format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-Black.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Degular Mono';
+  src: url('./assets/fonts/degular/DegularMonoDemo-BlackItalic.otf')
+    format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  font-family: 'Degular', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
