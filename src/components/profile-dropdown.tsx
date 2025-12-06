@@ -77,7 +77,7 @@ const ProfileDropdown = ({
         >
           <div className='p-4 border-b border-gray-100'>
             <div className='flex items-center gap-3'>
-              <div className='w-10 h-10 rounded-full bg-gradient-to-br from-[#5C6670] to-[#131316] flex items-center justify-center text-white font-semibold text-sm'>
+              <div className='w-10 h-10 rounded-full bg-linear-to-br from-[#5C6670] to-[#131316] flex items-center justify-center text-white font-semibold text-sm'>
                 {initials}
               </div>
               <div className='flex-1 min-w-0'>
