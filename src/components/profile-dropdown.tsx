@@ -35,13 +35,11 @@ const ProfileDropdown = ({
     const handleClickOutside = (event: MouseEvent) => {
       const target = event.target as Node;
 
-      // Check if click is outside both the dropdown and the button
       const isOutsideDropdown =
         dropdownRef.current && !dropdownRef.current.contains(target);
       const isOutsideButton =
         buttonRef?.current && !buttonRef.current.contains(target);
 
-      // Only close if click is outside both the dropdown and the button
       if (isOutsideDropdown && isOutsideButton) {
         onClose();
       }
@@ -102,7 +100,7 @@ const ProfileDropdown = ({
                   initial={{ opacity: 0, x: -10 }}
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.03, duration: 0.2 }}
-                  className='w-full flex items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors'
+                  className='w-full flex cursor-pointer items-center gap-3 px-4 py-3 text-left hover:bg-gray-50 transition-colors'
                   onClick={() => {
                     console.log(`Clicked: ${item.label}`);
                     if (item.label === 'Sign Out') {
@@ -110,8 +108,8 @@ const ProfileDropdown = ({
                     }
                   }}
                 >
-                  <Icon className='w-5 h-5 text-[#131316]' />
-                  <span className='font-degular text-sm font-medium text-[#131316]'>
+                  <Icon className='w-5 h-5 text-[#131316] font-normal' />
+                  <span className='font-degular text-sm cursor-pointer text-[#131316]'>
                     {item.label}
                   </span>
                 </motion.button>
