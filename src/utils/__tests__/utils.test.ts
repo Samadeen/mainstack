@@ -73,12 +73,12 @@ describe('getStatusColor', () => {
 });
 
 describe('exportTransactionsToCSV', () => {
-  let createElementSpy: ReturnType<typeof vi.spyOn>;
-  let appendChildSpy: ReturnType<typeof vi.spyOn>;
-  let removeChildSpy: ReturnType<typeof vi.spyOn>;
-  let clickSpy: ReturnType<typeof vi.spyOn>;
-  let createObjectURLSpy: ReturnType<typeof vi.spyOn>;
-  let revokeObjectURLSpy: ReturnType<typeof vi.spyOn>;
+  let createElementSpy: any;
+  let appendChildSpy: any;
+  let removeChildSpy: any;
+  let clickSpy: any;
+  let createObjectURLSpy: any;
+  let revokeObjectURLSpy: any;
 
   beforeEach(() => {
     // Mock DOM methods
@@ -228,4 +228,3 @@ describe('exportTransactionsToCSV', () => {
     expect(clickSpy).toHaveBeenCalled();
   });
 });
-
