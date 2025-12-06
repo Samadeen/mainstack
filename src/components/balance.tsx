@@ -10,9 +10,9 @@ const Balance = () => {
 
   if (isLoading) {
     return (
-      <div className='flex flex-col gap-8'>
+      <div className='flex flex-col gap-6 sm:gap-8 items-stretch sm:items-center w-full lg:items-center'>
         {[1, 2, 3, 4].map((i) => (
-          <div key={i} className='flex flex-col gap-2 w-[271px]'>
+          <div key={i} className='flex flex-col gap-2 w-full sm:w-[271px]'>
             <div className='h-4 bg-gray-200 rounded animate-pulse'></div>
             <div className='h-10 bg-gray-200 rounded animate-pulse'></div>
           </div>
@@ -51,9 +51,12 @@ const Balance = () => {
   ];
 
   return (
-    <div className='flex flex-col gap-8 items-center flex-[35%]'>
+    <div className='flex flex-col gap-6 sm:gap-8 items-stretch sm:items-center w-full lg:flex-[35%] lg:items-center'>
       {balanceItems.map((item) => (
-        <div key={item.label} className='flex flex-col gap-2 w-[271px]'>
+        <div
+          key={item.label}
+          className='flex flex-col gap-2 w-full sm:w-[271px]'
+        >
           <div className='flex gap-2 items-center w-full'>
             <p className='flex-1 font-degular text-sm font-medium text-[#56616B] leading-4 tracking-[-0.2px]'>
               {item.label}
@@ -87,7 +90,7 @@ const Balance = () => {
               </AnimatePresence>
             </div>
           </div>
-          <p className='font-degular text-[28px] font-bold text-[#131316] leading-[38px] tracking-[-0.6px]'>
+          <p className='font-degular text-xl sm:text-2xl lg:text-[28px] font-bold text-[#131316] leading-tight lg:leading-[38px] tracking-[-0.6px]'>
             {formatCurrency(item.value)}
           </p>
         </div>

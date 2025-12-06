@@ -66,11 +66,11 @@ const TransactionTable = () => {
         return (
           <div
             key={index}
-            className='flex items-center justify-between relative'
+            className='flex items-center justify-between relative gap-3 sm:gap-4'
           >
-            <div className='flex items-center gap-4 flex-1'>
+            <div className='flex items-center gap-3 sm:gap-4 flex-1 min-w-0'>
               <div
-                className={`${iconBg} w-12 h-12 rounded-full flex items-center justify-center shrink-0`}
+                className={`${iconBg} w-10 h-10 sm:w-12 sm:h-12 rounded-full flex items-center justify-center shrink-0`}
               >
                 <img
                   src={isDeposit ? inwardsIcon : outwardsIcon}
@@ -78,12 +78,12 @@ const TransactionTable = () => {
                 />
               </div>
 
-              <div className='flex flex-col justify-between'>
-                <p className='text-[#131316] text-base not-italic font-medium leading-6 tracking-[-0.0125rem]'>
+              <div className='flex flex-col justify-between min-w-0 flex-1'>
+                <p className='text-[#131316] text-sm sm:text-base not-italic font-medium leading-5 sm:leading-6 tracking-[-0.0125rem] truncate'>
                   {getTransactionTitle(transaction)}
                 </p>
                 <p
-                  className={`font-degular text-sm not-italic font-medium leading-4 tracking-[-0.0125rem] capitalize mt-[0.56rem] ${
+                  className={`font-degular text-xs sm:text-sm not-italic font-medium leading-4 tracking-[-0.0125rem] capitalize mt-1 sm:mt-[0.56rem] ${
                     transaction.type === 'withdrawal'
                       ? getStatusColor(transaction.status)
                       : 'text-[#56616B]'
@@ -94,11 +94,11 @@ const TransactionTable = () => {
               </div>
             </div>
 
-            <div className='flex flex-col items-end justify-between min-h-[49px]'>
-              <p className='font-degular text-[#131316] text-right text-base not-italic font-bold leading-[150%] tracking-[-0.025rem]'>
+            <div className='flex flex-col items-end justify-between min-h-[49px] shrink-0'>
+              <p className='font-degular text-[#131316] text-right text-sm sm:text-base not-italic font-bold leading-[150%] tracking-[-0.025rem]'>
                 {formatCurrency(transaction.amount)}
               </p>
-              <p className='font-degular text-[#56616B] text-right text-sm not-italic font-medium leading-4 tracking-[-0.0125rem]'>
+              <p className='font-degular text-[#56616B] text-right text-xs sm:text-sm not-italic font-medium leading-4 tracking-[-0.0125rem]'>
                 {formatDate(transaction.date)}
               </p>
             </div>

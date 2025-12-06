@@ -5,7 +5,7 @@ import invoicinIcon from '../assets/invoicin.svg';
 
 const AppBar = () => {
   return (
-    <div className=' bg-white shadow-[0_4px_8px_0_rgba(92,115,131,0.08),0_6px_12px_0_rgba(92,115,131,0.08)] rounded-[6.25rem] w-12 p-1 space-y-6 flex items-center flex-col py-6 fixed left-4 bottom-1/2 translate-y-1/2 '>
+    <div className='hidden lg:flex bg-white shadow-[0_4px_8px_0_rgba(92,115,131,0.08),0_6px_12px_0_rgba(92,115,131,0.08)] rounded-[6.25rem] w-12 p-1 space-y-6 items-center flex-col py-6 fixed left-4 bottom-1/2 translate-y-1/2 z-40'>
       <img
         className='grayscale cursor-pointer hover:grayscale-0 transition-all'
         src={linkIcon}

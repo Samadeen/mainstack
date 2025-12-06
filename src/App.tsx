@@ -9,7 +9,7 @@ function App() {
     <>
       <Header />
       <AppBar />
-      <div className='max-w-[1240px] mx-auto mt-20'>
+      <div className='max-w-[1240px] mx-auto mt-8 md:mt-12 lg:mt-20 px-4 sm:px-6 lg:px-8'>
         <Revenue />
         <Transaction />
       </div>

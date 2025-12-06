@@ -3,7 +3,7 @@ import TransactionTable from './transaction-table';
 
 const Transaction = () => {
   return (
-    <div className='my-20'>
+    <div className='my-8 sm:my-12 lg:my-20'>
       <TransactionFilter />
       <TransactionTable />
     </div>

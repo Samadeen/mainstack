@@ -23,8 +23,8 @@ const Header = () => {
     `${firstName.charAt(0)}${lastName.charAt(0)}`.toUpperCase() || 'OJ';
 
   return (
-    <header className='bg-white shadow-[0_2px_6px_0_rgba(45,59,67,0.06),0_2px_4px_0_rgba(45,59,67,0.05)] rounded-[6.25rem] border-2 border-solid border-white sticky top-4 w-[98%] mx-auto z-50 mt-4'>
-      <div className='px-4 '>
+    <header className='bg-white shadow-[0_2px_6px_0_rgba(45,59,67,0.06),0_2px_4px_0_rgba(45,59,67,0.05)] rounded-lg md:rounded-[6.25rem] border-2 border-solid border-white sticky top-2 sm:top-4 w-[95%] sm:w-[98%] mx-auto z-50 mt-2 sm:mt-4'>
+      <div className='px-3 sm:px-4'>
         <div className='flex items-center justify-between h-16'>
           <div className='shrink-0 flex items-center'>
             <img src={mainstackLogo} alt='Mainstack' className='h-9 w-9' />
@@ -152,7 +152,7 @@ const Header = () => {
                     href={route.route}
                     className={`flex items-center gap-3 px-4 py-3 text-sm font-medium transition-colors ${
                       isActive
-                        ? 'bg-[#131316] text-white rounded-[6.25rem]'
+                        ? 'bg-[#131316] text-white rounded-lg'
                         : 'text-gray-700 rounded-[6.25rem] hover:bg-gray-100'
                     }`}
                     onClick={() => setIsMobileMenuOpen(false)}

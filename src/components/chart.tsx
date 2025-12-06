@@ -6,12 +6,12 @@ const Chart = () => {
 
   if (isLoading) {
     return (
-      <div className='flex gap-16 items-center'>
+      <div className='flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-16 items-start sm:items-center'>
         <div className='flex flex-col gap-2'>
           <div className='h-4 w-32 bg-gray-200 rounded animate-pulse'></div>
           <div className='h-12 w-48 bg-gray-200 rounded animate-pulse'></div>
         </div>
-        <div className='h-12 w-32 bg-gray-200 rounded-full animate-pulse'></div>
+        <div className='h-12 w-full sm:w-32 bg-gray-200 rounded-full animate-pulse'></div>
       </div>
     );
   }
@@ -24,24 +24,24 @@ const Chart = () => {
   const availableBalance = walletData.balance || 0;
 
   return (
-    <div className='flex-[65%]'>
-      <div className='flex gap-16 items-center'>
+    <div className='w-full lg:flex-[65%] self-stretch'>
+      <div className='flex flex-col sm:flex-row gap-4 sm:gap-8 lg:gap-16 items-start sm:items-center justify-between'>
         <div className='flex flex-col gap-2 items-start'>
           <p className='font-degular text-sm font-medium text-[#56616B] leading-4 tracking-[-0.2px] whitespace-pre'>
             Available Balance
           </p>
-          <p className='font-degular text-[36px] font-bold text-[#131316] leading-[48px] tracking-[-1.5px] whitespace-pre'>
+          <p className='font-degular text-2xl sm:text-3xl lg:text-[36px] font-bold text-[#131316] leading-tight lg:leading-[48px] tracking-[-1.5px] whitespace-pre'>
             {formatCurrency(availableBalance)}
           </p>
         </div>
 
-        <button className='bg-[#131316] flex cursor-pointer gap-2 items-center justify-center px-7 py-3.5 rounded-[100px] w-[167px] hover:opacity-90 transition-opacity'>
-          <p className='font-degular text-base font-semibold text-white leading-6 tracking-[-0.4px] whitespace-pre'>
+        <button className='bg-[#131316] flex cursor-pointer gap-2 items-center justify-center px-6 sm:px-7 py-3 sm:py-3.5 rounded-[100px] w-full sm:w-auto sm:min-w-[167px] hover:opacity-90 transition-opacity'>
+          <p className='font-degular text-sm sm:text-base font-semibold text-white leading-6 tracking-[-0.4px] whitespace-pre'>
             Withdraw
           </p>
         </button>
       </div>
-      <div className='mt-20 w-full'>
+      <div className='mt-8 sm:mt-12 lg:mt-20 w-full'>
         <svg
           viewBox='0 0 800 220'
           className='w-full h-auto'
